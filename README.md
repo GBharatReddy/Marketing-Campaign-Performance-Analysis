@@ -1,20 +1,20 @@
-# 📈 Marketing Campaign Performance Analysis
+# Marketing Campaign Performance Analysis
 
-## Project Overview
+## 📌 Project Overview
 
 This project analyses and compares the performance of **Facebook and AdWords advertising campaigns** over 2019.
 
-The objective is to determine which advertising platform performs better in terms of **views, clicks, conversions, engagement, and cost-effectiveness**, while also identifying relationships and trends within campaign performance.
-
-The dataset contains **365 daily observations**, covering January 1, 2019 to December 31, 2019.
+The analysis evaluates campaign performance across views, clicks, conversions, click-through rate, conversion rate, and advertising costs to identify the more effective platform and derive actionable marketing insights.
 
 ## 🎯 Business Objective
 
-Determine which advertising platform delivers better campaign performance and identify factors that can help improve marketing efficiency and resource allocation.
+Determine which advertising platform delivers better performance in terms of **clicks, conversions, and overall cost-effectiveness**, and identify factors that can help improve campaign efficiency.
 
 ## 📁 Dataset
 
-The dataset contains daily performance metrics for both Facebook and AdWords, including:
+The dataset contains **365 daily observations** covering the period from January 1, 2019 to December 31, 2019.
+
+Key variables include:
 
 * Ad views
 * Ad clicks
@@ -23,8 +23,6 @@ The dataset contains daily performance metrics for both Facebook and AdWords, in
 * Click-through rate (CTR)
 * Conversion rate
 * Cost per click (CPC)
-
-The dataset contains **365 rows and 17 columns**.
 
 ## 🛠️ Tools & Technologies
 
@@ -40,101 +38,91 @@ The dataset contains **365 rows and 17 columns**.
 
 ## 🔍 Analysis Performed
 
-### Exploratory Data Analysis
-
-* Data cleaning and type conversion
+* Data cleaning and preprocessing
+* Data type conversion
 * Descriptive statistics
-* Campaign performance comparison
-* Conversion analysis
-* Click and conversion relationships
+* Facebook vs AdWords campaign comparison
+* Conversion and click analysis
+* Correlation analysis
+* Hypothesis testing
+* Linear regression
+* Conversion prediction
+* Time-series analysis
+* Seasonal decomposition
+* Cointegration analysis
 * Cost-effectiveness analysis
+
+## 📊 Campaign Performance
+
+The analysis compares Facebook and AdWords across key marketing KPIs including views, clicks, conversions, and cost.
+
+![Campaign Comparison](Images/Campaign_Comparison.png)
+
+## 📈 Clicks and Conversions
+
+The relationship between advertising clicks and conversions was analysed to understand whether higher click volumes are associated with improved conversion performance.
+
+![Clicks vs Conversions](Images/Clicks_vs_Conversions.png)
+
+## 📅 Campaign Performance Over Time
+
+Daily campaign data was analysed to identify trends and changes in advertising performance throughout 2019.
+
+![Monthly Performance](Images/Monthly_Performance.png)
+
+## 💰 Cost Effectiveness
+
+Campaign costs and conversion performance were analysed to evaluate the relative efficiency of the two advertising platforms.
+
+![Cost Effectiveness](Images/Cost_Effectiveness.png)
+
+## 📊 Key Findings
+
+* Facebook generated a higher average number of daily conversions than AdWords.
+* Facebook averaged approximately **11.74 daily conversions**, compared with approximately **5.98 for AdWords**.
+* AdWords generated a higher average number of daily clicks, while Facebook generated more conversions.
+* The analysis examined the relationship between clicks and conversions using correlation and regression techniques.
+* A linear regression model was used to estimate expected Facebook conversions at different click volumes.
+* For example, the model estimated approximately **13 conversions for 50 clicks** and **19.31 conversions for 80 clicks**.
+* Time-series analysis was used to examine campaign behaviour over the year.
+
+## 📈 Statistical & Predictive Analysis
+
+The project combines descriptive, inferential, predictive, and time-series techniques.
 
 ### Statistical Analysis
 
 * Correlation analysis
 * Hypothesis testing
+
+### Predictive Analysis
+
 * Linear regression
-* R² and prediction analysis
-* Time-series analysis
+* R² evaluation
+* Conversion prediction
+
+### Time-Series Analysis
+
+* Trend analysis
 * Seasonal decomposition
 * Cointegration analysis
 
-## 📊 Key Findings
+## 💡 Business Insight
 
-Facebook generated a higher average number of daily conversions than AdWords:
+The analysis demonstrates why marketing performance should not be evaluated using clicks alone.
 
-| Metric                    |  Facebook |  AdWords |
-| ------------------------- | --------: | -------: |
-| Average daily clicks      |     44.05 |    60.38 |
-| Average daily conversions | **11.74** | **5.98** |
+Although AdWords generated more daily clicks on average, Facebook generated substantially more daily conversions. This highlights the importance of evaluating campaigns using multiple KPIs such as conversion rate, conversions, cost, and cost per click.
 
-The dataset therefore shows that AdWords generated more clicks on average, while Facebook generated substantially more conversions.
+The findings can help marketers make more informed decisions about campaign allocation and optimization.
 
-The analysis also investigates the relationship between clicks and conversions and applies linear regression to evaluate how well clicks explain conversion performance.
+## 📂 Files
 
-The regression model is further used to estimate expected Facebook conversions for different click volumes. For example:
-
-* **50 clicks → approximately 13 expected conversions**
-* **80 clicks → approximately 19.31 expected conversions**
-
-Time-series techniques are used to examine campaign behaviour over the year, while a cointegration test is applied to investigate the long-term relationship between selected campaign variables.
-
-## 💡 Business Insights
-
-The analysis suggests that campaign evaluation should not rely on clicks alone.
-
-AdWords generated a higher average number of daily clicks, but Facebook generated a higher average number of daily conversions. This highlights the importance of evaluating campaigns using multiple KPIs, including:
-
-* Clicks
-* Conversions
-* Conversion rate
-* Cost
-* Cost per click
-* Cost-effectiveness
-
-The analysis also demonstrates how statistical modelling can be used to move from descriptive reporting toward predictive marketing analytics.
-
-## 📌 Analytical Approach
-
-The project combines:
-
-```text
-Data Cleaning
-      ↓
-Exploratory Analysis
-      ↓
-Campaign Comparison
-      ↓
-Correlation Analysis
-      ↓
-Hypothesis Testing
-      ↓
-Regression Analysis
-      ↓
-Prediction
-      ↓
-Time-Series Analysis
-      ↓
-Business Insights
-```
-
-## 📂 Repository Contents
-
-```text
-Marketing-Campaign-Performance-Analysis/
-│
-├── README.md
-├── Marketing_Campaign_Analysis.ipynb
-├── marketing_campaign.csv
-└── images/
-```
-
-### Notebook
-
-`Marketing_Campaign_Analysis.ipynb` contains the complete analysis, visualizations, statistical tests, regression models, predictions, and conclusions.
+* `Marketing_Campaign_Analysis.ipynb` — Complete Python analysis
+* `marketing_campaign.csv` — Dataset
+* `Images/` — Selected visualizations used in this README
 
 ## 👤 Author
 
 **Bharat Reddy**
 
-MSc Data Analytics | Business Analytics | Python | SQL | Power BI
+Data Analytics | Business Analytics | Python | SQL | Power BI
